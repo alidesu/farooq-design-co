@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+}
+
+img {
+  width: 60px;
+  margin-left: 38px;
+}
+
+.sub-class {
+  /* margin-top: 20px; */
+  display: flex;
+  align-items: center;
+  font-family: "JetBrains Mono", monospace;
+  /* font-style: italic; */
+  font-weight: 500;
+  font-size: 23px;
+  letter-spacing: 5px;
+  justify-content: center;
+}
+
+.main-class {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.side-button {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  margin-right: 38px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.herosection {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 90px;
+  text-align: center;
+  overflow: hidden;
+}
+
+body {
+    overflow: hidden;
+  }
+  
+
+.focus-in-contract-bck {
+  -webkit-animation: focus-in-contract-bck 1s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: focus-in-contract-bck 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes focus-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(300px);
+    transform: translateZ(300px);
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(12px);
+    transform: translateZ(12px);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes focus-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(300px);
+    transform: translateZ(300px);
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(12px);
+    transform: translateZ(12px);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+/* NewsTicker.css */
+.news-ticker-container {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .news-ticker {
+    display: flex;
+    animation: scroll 45s linear infinite; /* Adjust animation duration as needed */
+    animation-timing-function: linear;
+  }
+  
+  .news-item {
+    min-width: 100%;
+    white-space: nowrap;
+    padding: 0 10px; /* Add padding to separate news items */
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%); /* Move content from right to left */
+    }
+  }
+  
